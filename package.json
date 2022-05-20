@@ -17,6 +17,14 @@
   },
   "homepage": "https://github.com/immer-lena/portfolio#readme",
   "dependencies": {
-    "bootstrap": "^5.1.3"
+    "bootstrap": "^5.1.3",
+    "bootstrap-icons": "^1.8.2",
+    "grunt": "^1.5.3"
+  },
+  "devDependencies": {
+    "grunt-contrib-cssmin": "^4.0.0",
+    "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-uglify": "^5.2.1",
+    "grunt-contrib-watch": "^1.1.0"
   }
 }
