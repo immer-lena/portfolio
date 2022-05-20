@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import "responsive";
+@import "animations";
+
+$box-shadow: 3px 6px 6px rgba(0,0,0, .25);
+$theme-colors: (
+        "primary": #005C7E,
+        "secondary": #D8D8D8
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$primary : #005C7E;
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.section-margin{
+  margin-bottom: 10rem;
+}
+
+.section-padding{
+  padding: 10rem;
+}
+
+p{
+  margin: 0;
+}
+
+h1{
+  font-size: 70px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+hr{
+  margin: 0;
+}
+
+.bg-gradient-secondary{
+  background: linear-gradient(180deg, rgba(216, 216, 216, 0.42) 0%, rgba(205, 205, 205, 0.15) 19.27%, rgba(196, 196, 196, 0) 100%);
+}
+
+.hero{
+  left: 0;
+  top: 0;
+  background: linear-gradient(180deg, $primary 0%, rgba(0, 92, 126, 0.16) 82.29%, rgba(0, 92, 126, 0) 100%);
+
+  .nav{
+    .img-fluid{
+      width: 20%;
+    }
+  }
+
+  .profile-pic{
+    img{
+      width: 60%;
+    }
+  }
+}
+
+.about{
+  .circles{
+    div{
+      border-radius: 50%;
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  .hobby{
+    width: 33%;
+
+    i{
+      font-size: xx-large;
+      color: $primary;
+    }
+  }
+}
+
+.education{
+
+    &::before{
+      content: "";
+      position: absolute;
+      background: url("../assets/images/background-education.svg");
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      display: inline-block;
+      left: 0;
+      overflow: hidden;
+    }
+
+  .timeline {
+    margin: 0 auto;
+
+    &:after{
+      content: "";
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      margin-left: -2px;
+      border-right: 4px solid white;
+      height: 100%;
+      display: block;
+    }
+  }
+
+  .timeline-row {
+    padding-left: 50%;
+    margin-bottom: 30px;
+
+    .timeline-content {
+      position: relative;
+      padding: 20px 30px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      background: white;
+
+      &:after{
+        content: "";
+        position: absolute;
+        top: 20px;
+        height: 3px;
+        width: 40px;
+      }
+
+      &:before{
+        content: "";
+        position: absolute;
+        top: 20px;
+        right: -55px;
+        width: 30px;
+        height: 30px;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        border-radius: 100px;
+        z-index: 100;
+        background: white;
+        border: 3px solid white;
+      }
+
+    }
+
+
+  }
+
+  .timeline-row:nth-child(odd) .timeline-content {
+    margin-left: 40px;
+    text-align: left;
+
+    &:after {
+      left: -39px;
+      border-right: 18px solid white;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+    }
+
+    &:before {
+      left: -55px;
+      right: initial;
+    }
+  }
+
+  .timeline-row:nth-child(even) {
+    padding-left: 0;
+    padding-right: 50%;
+
+    .timeline-content {
+      margin-right: 40px;
+      margin-left: 0;
+
+      &:after {
+        right: -39px;
+        border-left: 18px solid white;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+      }
+    }
+  }
+}
+
+.skills{
+
+  img{
+    width: 90%;
+  }
+
+}
+
+.contact{
+  background: linear-gradient(0deg, $primary 0%, rgba(0, 92, 126, 0.16) 82.29%, rgba(0, 92, 126, 0) 100%);
+  a{
+    text-decoration: none;
+    color: white;
+  }
+
+  i{
+    font-size: xxx-large;
+  }
+
+}
+
+
+
+
+
+
+
+
+
